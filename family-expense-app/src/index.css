@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand Colors */
+    --color-primary:         #0F6E56;  
+    --color-primary-light:   #E1F5EE;
+    --color-primary-hover:   #085041;
+
+    /* Semantic Colors */
+    --color-income:          #1D9E75;  
+    --color-expense:         #E24B4A;  
+    --color-warning:         #EF9F27;  
+    --color-info:            #378ADD;  
+
+    /* Budget Alert */
+    --color-budget-safe:     #1D9E75;  
+    --color-budget-warn:     #EF9F27;  
+    --color-budget-danger:   #E24B4A;  
+
+    /* Neutral */
+    --color-gray-50:  #F8F9FA;
+    --color-gray-100: #F1F3F5;
+    --color-gray-200: #E9ECEF;
+    --color-gray-600: #868E96;
+    --color-gray-900: #212529;
+
+    /* Radius & Shadows */
+    --radius-sm:  6px;
+    --radius-md:  8px;
+    --radius-lg:  12px;
+    --radius-xl:  16px;
+    --radius-full: 9999px;  
+
+    --shadow-sm:  0 1px 3px rgba(0,0,0,0.08);
+    --shadow-md:  0 4px 12px rgba(0,0,0,0.10);
+    --shadow-lg:  0 8px 24px rgba(0,0,0,0.12);
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans;
+  }
+}
