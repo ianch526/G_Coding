@@ -43,7 +43,7 @@ export default function MemberStats() {
             <BarChart data={memberData} layout="vertical" margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
               <XAxis type="number" />
               <YAxis dataKey="name" type="category" stroke="var(--color-gray-600)" />
-              <Tooltip formatter={(value: number) => `$${value.toLocaleString()}`} />
+              <Tooltip formatter={(value: any) => `$${Number(value).toLocaleString()}`} />
               <Bar dataKey="amount" radius={[0, 4, 4, 0]} />
             </BarChart>
           </ResponsiveContainer>

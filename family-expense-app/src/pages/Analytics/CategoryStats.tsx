@@ -43,7 +43,7 @@ export default function CategoryStats() {
                   <Cell key={`cell-${index}`} fill={entry.color} />
                 ))}
               </Pie>
-              <Tooltip formatter={(value: number) => `$${value.toLocaleString()}`} />
+              <Tooltip formatter={(value: any) => `$${Number(value).toLocaleString()}`} />
             </PieChart>
           </ResponsiveContainer>
         </div>
